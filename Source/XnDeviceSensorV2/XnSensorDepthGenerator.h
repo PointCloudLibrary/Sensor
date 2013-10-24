@@ -67,6 +67,7 @@ public:
 	xn::ModuleAlternativeViewPointInterface* GetAlternativeViewPointInterface() { return this; }
 	XnBool IsViewPointSupported(xn::ProductionNode& OtherNode);
 	XnStatus SetViewPoint(xn::ProductionNode& OtherNode);
+  XnStatus GetPixelCoordinatesInViewPoint(xn::ProductionNode& other, XnUInt32 x, XnUInt32 y, XnUInt32& altX, XnUInt32& altY);
 	XnStatus ResetViewPoint();
 	XnBool IsViewPointAs(xn::ProductionNode& OtherNode);
 	XnStatus RegisterToViewPointChange(XnModuleStateChangedHandler handler, void* pCookie, XnCallbackHandle& hCallback);
