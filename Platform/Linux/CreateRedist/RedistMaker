@@ -29,6 +29,8 @@ else
 		PLATFORM="x64" ;;
 	arm)
 		PLATFORM="Arm" ;;
+	aarch64)
+		PLATFORM="AArch64" ;;
 	ppc)
 		PLATFORM="Powerpc" ;;
 	arm*)

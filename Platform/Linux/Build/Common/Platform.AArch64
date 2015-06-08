@@ -1,0 +1,9 @@
+ifeq "$(CFG)" "Release"
+
+    # Optimization level, minus currently buggy optimizing methods (which break bit-exact)
+    CFLAGS += -O3 -fno-tree-pre -fno-strict-aliasing
+
+    # More optimization flags
+    CFLAGS += -ftree-vectorize -ffast-math -funsafe-math-optimizations -fsingle-precision-constant
+
+endif
