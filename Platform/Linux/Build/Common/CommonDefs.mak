@@ -40,7 +40,7 @@ else
 endif
 
 # expand file list
-SRC_FILES_LIST = $(wildcard $(SRC_FILES))
+SRC_FILES_LIST = $(sort $(wildcard $(SRC_FILES)))
 
 # define the intermediate directory
 INT_DIR = $(PLATFORM)-$(CFG)
