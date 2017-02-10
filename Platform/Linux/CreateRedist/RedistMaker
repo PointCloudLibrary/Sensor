@@ -35,6 +35,8 @@ else
 		PLATFORM="Powerpc" ;;
 	arm*)
 		PLATFORM="Arm" ;;
+	mips*)
+		PLATFORM="Mips" ;;
 	*)
 		echo "Unknown machine type: $MACHINE_TYPE"
 		exit 1

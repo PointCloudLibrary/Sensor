@@ -19,6 +19,8 @@ else ifneq (,$(findstring aarch64,$(MACHINE)))
 	HOST_PLATFORM = AArch64
 else ifneq (,$(findstring ppc,$(MACHINE)))
 	HOST_PLATFORM = Powerpc
+else ifneq (,$(findstring mips,$(MACHINE)))
+	HOST_PLATFORM = Mips
 else
 	DUMMY:=$(error Can't determine host platform)
 endif
