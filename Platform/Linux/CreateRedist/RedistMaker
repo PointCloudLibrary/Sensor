@@ -31,7 +31,7 @@ else
 		PLATFORM="Arm" ;;
 	aarch64)
 		PLATFORM="AArch64" ;;
-	ppc)
+	ppc*)
 		PLATFORM="Powerpc" ;;
 	arm*)
 		PLATFORM="Arm" ;;
