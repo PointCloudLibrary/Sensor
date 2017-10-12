@@ -244,6 +244,12 @@ XnStatus XnSensorDepthGenerator::SetViewPoint(xn::ProductionNode& OtherNode)
 	}
 }
 
+XnStatus
+XnSensorDepthGenerator::GetPixelCoordinatesInViewPoint(xn::ProductionNode& other, XnUInt32 x, XnUInt32 y, XnUInt32& altX, XnUInt32& altY)
+{
+      return 0;
+}
+
 XnStatus XnSensorDepthGenerator::ResetViewPoint()
 {
 	return SetIntProperty(XN_STREAM_PROPERTY_REGISTRATION, FALSE);
